@@ -7,7 +7,7 @@ LABEL maintainer="Tech Trends"
 #  defines the working directory within the container
 WORKDIR /techtrends
 
-COPY .project/techtrends/requirements.txt
+COPY .project/techtrends/requirements.txt .
 
 # run commands within the container. 
 # For example, invoke a pip command 
