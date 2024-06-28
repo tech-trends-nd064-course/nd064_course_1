@@ -7,14 +7,14 @@ LABEL maintainer="Tech Trends"
 #  defines the working directory within the container
 WORKDIR /techtrends
 
-COPY .project/techtrends/requirements.txt .
+COPY ./project/techtrends/requirements.txt .
 
 # run commands within the container. 
 # For example, invoke a pip command 
 # to install dependencies defined in the requirements.txt file. 
 RUN pip install -r requirements.txt
 
-COPY .project/techtrends .
+COPY ./project/techtrends .
 # Run the init_db.py script to initialize the database
 RUN python3 init_db.py
 
