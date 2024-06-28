@@ -4,17 +4,17 @@ FROM python:3.8
 # set a key-value label for the Docker image
 LABEL maintainer="Tech Trends"
 # copy files from the host to the container filesystem. 
-# For example, all the files in the current directory
-# to the  `/app` directory in the container
-COPY techtrends /techtrends
 #  defines the working directory within the container
 WORKDIR /techtrends
+
+COPY .project/techtrends/requirements.txt
 
 # run commands within the container. 
 # For example, invoke a pip command 
 # to install dependencies defined in the requirements.txt file. 
 RUN pip install -r requirements.txt
 
+COPY .project/techtrends .
 # Run the init_db.py script to initialize the database
 RUN python3 init_db.py
 
