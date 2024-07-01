@@ -3,7 +3,7 @@ argoproj.io/v1alpha1
 kind: Application
 metadata:
  name: techtrends-staging
- namespace: argocd
+ namespace: staging
 spec:
  destination:
    namespace: default
