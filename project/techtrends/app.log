@@ -1,0 +1,199 @@
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.226.93.213:3111/ (Press CTRL+C to quit)
+INFO:app:Article <sqlite3.Row object at 0x0000023F1EA19AE0> retrieved!
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:05:12] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:05:12] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+ERROR:app:A non-existing article is accessed
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:05:32] "[33mGET /8 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:05:32] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.226.93.213:3111/ (Press CTRL+C to quit)
+ERROR:app:A non-existing article is accessed
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:08:01] "[33mGET /8 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:08:01] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Article <sqlite3.Row object at 0x0000013B37FBA7D0> retrieved!
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:08:04] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:08:04] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.226.93.213:3111/ (Press CTRL+C to quit)
+ERROR:app:Exception on /1 [GET]
+Traceback (most recent call last):
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\a5100134\git\nd064_course_1\project\techtrends\app.py", line 43, in post
+    app.logger.info(f"Article {post.title} retrieved!")
+AttributeError: 'sqlite3.Row' object has no attribute 'title'
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:08:46] "[35m[1mGET /1 HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.226.93.213:3111/ (Press CTRL+C to quit)
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.226.93.213:3111/ (Press CTRL+C to quit)
+ERROR:app:Exception on /1 [GET]
+Traceback (most recent call last):
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\a5100134\git\nd064_course_1\project\techtrends\app.py", line 43, in post
+    app.logger.info(f"Article {post.title} retrieved!")
+AttributeError: 'sqlite3.Row' object has no attribute 'title'
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:13:21] "[35m[1mGET /1 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /1 [GET]
+Traceback (most recent call last):
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\a5100134\git\nd064_course_1\project\techtrends\app.py", line 43, in post
+    app.logger.info(f"Article {post.title} retrieved!")
+AttributeError: 'sqlite3.Row' object has no attribute 'title'
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:13:26] "[35m[1mGET /1 HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.226.93.213:3111/ (Press CTRL+C to quit)
+INFO:app:Article None retrieved!
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:13:46] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:13:46] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.226.93.213:3111/ (Press CTRL+C to quit)
+ERROR:app:Exception on /1 [GET]
+Traceback (most recent call last):
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\a5100134\git\nd064_course_1\project\techtrends\app.py", line 47, in post
+    fname = row[1]
+TypeError: 'int' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:23:55] "[35m[1mGET /1 HTTP/1.1[0m" 500 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.226.93.213:3111/ (Press CTRL+C to quit)
+INFO:app:1
+INFO:app:2024-05-24 09:02:50
+INFO:app:2020 CNCF Annual Report
+INFO:app:The Cloud Native Computing Foundation (CNCF) annual report for 2020 is now available. The report highlights the growth of the community, events, projects, and more, over the past year.
+INFO:app:Article retrieved!
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:27:41] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:27:41] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.226.93.213:3111/ (Press CTRL+C to quit)
+INFO:app:1
+INFO:app:2024-05-24 09:02:50
+INFO:app:Article retrieved!
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:29:01] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:29:01] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.226.93.213:3111/ (Press CTRL+C to quit)
+INFO:app:Title: 1
+INFO:app:Title: 2024-05-24 09:02:50
+INFO:app:Title: 2020 CNCF Annual Report
+INFO:app:Title: The Cloud Native Computing Foundation (CNCF) annual report for 2020 is now available. The report highlights the growth of the community, events, projects, and more, over the past year.
+INFO:app:Article retrieved!
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:30:59] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:30:59] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Title: 1
+INFO:app:Title: 2024-05-24 09:02:50
+INFO:app:Title: 2020 CNCF Annual Report
+INFO:app:Title: The Cloud Native Computing Foundation (CNCF) annual report for 2020 is now available. The report highlights the growth of the community, events, projects, and more, over the past year.
+INFO:app:Article retrieved!
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:32:37] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:32:37] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.226.93.213:3111/ (Press CTRL+C to quit)
+INFO:app:Article 2020 CNCF Annual Report retrieved!
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:32:48] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:32:48] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.226.93.213:3111/ (Press CTRL+C to quit)
+INFO:app:Article 2020 CNCF Annual Report retrieved!
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:42:40] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:42:40] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:The "About Us" page is retrieved.
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:43:24] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:43:24] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.226.93.213:3111/ (Press CTRL+C to quit)
+INFO:app:The "About Us" page is retrieved.
+Stack (most recent call last):
+  File "c:\Program_Files_Additional\Python3102_64\lib\threading.py", line 966, in _bootstrap
+    self._bootstrap_inner()
+  File "c:\Program_Files_Additional\Python3102_64\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "c:\Program_Files_Additional\Python3102_64\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Program_Files_Additional\Python3102_64\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "c:\Program_Files_Additional\Python3102_64\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "c:\Program_Files_Additional\Python3102_64\lib\socketserver.py", line 747, in __init__
+    self.handle()
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\werkzeug\serving.py", line 342, in handle
+    BaseHTTPRequestHandler.handle(self)
+  File "c:\Program_Files_Additional\Python3102_64\lib\http\server.py", line 427, in handle
+    self.handle_one_request()
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\werkzeug\serving.py", line 374, in handle_one_request
+    self.run_wsgi()
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\werkzeug\serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\werkzeug\serving.py", line 308, in execute
+    application_iter = app(environ, start_response)
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\flask\app.py", line 2095, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Program_Files_Additional\Python3102venv-swiftmon\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\a5100134\git\nd064_course_1\project\techtrends\app.py", line 49, in about
+    app.logger.info('The "About Us" page is retrieved.', stack_info=1)
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:45:11] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 11:45:11] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-05-24 11:49:13 +0100 WARNING   * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2024-05-24 11:49:13 +0100 INFO      * Running on http://10.226.93.213:3111/ (Press CTRL+C to quit)
+2024-05-24 11:49:13 +0100 INFO     The "About Us" page is retrieved.
+2024-05-24 11:49:13 +0100 INFO     127.0.0.1 - - [24/May/2024 11:49:13] "GET /about HTTP/1.1" 200 -
+2024-05-24 11:49:13 +0100 INFO     127.0.0.1 - - [24/May/2024 11:49:13] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-05-24 11:50:37 +0100 WARNING   * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2024-05-24 11:50:37 +0100 INFO      * Running on http://10.226.93.213:3111/ (Press CTRL+C to quit)
+2024-05-24 11:50:39 +0100 INFO     The "About Us" page is retrieved.
+2024-05-24 11:50:39 +0100 INFO     127.0.0.1 - - [24/May/2024 11:50:39] "GET /about HTTP/1.1" 200 -
+2024-05-24 11:50:39 +0100 INFO     127.0.0.1 - - [24/May/2024 11:50:39] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-05-24 11:50:54 +0100 WARNING   * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2024-05-24 11:50:54 +0100 INFO      * Running on http://10.226.93.213:3111/ (Press CTRL+C to quit)
+2024-05-24 11:50:54 +0100 INFO     The "About Us" page is retrieved.
+2024-05-24 11:50:54 +0100 INFO     127.0.0.1 - - [24/May/2024 11:50:54] "GET /about HTTP/1.1" 200 -
+2024-05-24 11:50:55 +0100 INFO     127.0.0.1 - - [24/May/2024 11:50:55] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -

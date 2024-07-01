@@ -1,8 +1,8 @@
 import sqlite3
-import logging
 
 from flask import Flask, jsonify, json, render_template, request, url_for, redirect, flash
 from werkzeug.exceptions import abort
+import logging
 
 # Function to get a database connection.
 # This function connects to database with the name `database.db`
@@ -66,7 +66,8 @@ def health_check():
             mimetype='application/json'
         )
     connection.close()
-    return response  
+    return response
+
 
 @app.route('/metrics')
 def metrics():
@@ -109,4 +110,4 @@ if __name__ == "__main__":
     ## stream logs to app.log file
     logging.basicConfig(datefmt= r'%Y-%m-%d %H:%M:%S %z', filename='app.log',level=logging.DEBUG, format='%(asctime)s %(levelname)-8s %(message)s')
     
-   app.run(host='0.0.0.0', port='3111')
+    app.run(host='0.0.0.0', port='3111')
