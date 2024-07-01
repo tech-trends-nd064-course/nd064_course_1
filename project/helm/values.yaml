@@ -28,5 +28,4 @@ resources:
   limits:
     memory: "128Mi"
     cpu: "500m"
-
- type: ClusterIP
+containerPort: 3111
