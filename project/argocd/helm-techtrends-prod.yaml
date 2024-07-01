@@ -3,7 +3,7 @@ argoproj.io/v1alpha1
 kind: Application
 metadata:
  name: techtrends-prod
- namespace: prod
+ namespace: argocd
 spec:
  destination:
    namespace: prod
