@@ -4,13 +4,12 @@ metadata:
   labels:
     app: techtrends
   name: techtrends
-  namespace: {{ .Values.namespace.name }}
+  namespace: sandbox
 spec:
   ports:
-    - port: {{ .Values.service.port }}
-      targetPort: {{ default .Values.service.port .Values.service.targetPort }}
-      protocol: {{ .Values.service.protocol }}
+  - port: 4111
+    protocol: TCP
+    targetPort: 3111
   selector:
     app: techtrends
-  type: {{ .Values.service.type }}
-
+  type: ClusterIP
