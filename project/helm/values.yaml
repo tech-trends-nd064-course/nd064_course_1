@@ -10,7 +10,7 @@ service:
 
 image:
   repository: remyapadmanabhan/techtrends
-  tag: latest
+  tag: v1.0.0
   pullPolicy: IfNotPresent
 
 replicaCount: 1
