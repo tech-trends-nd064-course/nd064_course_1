@@ -1,6 +1,7 @@
 namespace:
   name: sandbox
 
+appname: techtrends
 service:
   port: 4111
   type: ClusterIP
@@ -14,11 +15,9 @@ image:
 
 replicaCount: 1
 livenessProbe:
-  httpGet:
     path: /healthz
     port: 3111
 readinessProbe:
-    httpGet:
       path: /healthz
       port: 3111
 resources:
@@ -28,4 +27,5 @@ resources:
   limits:
     memory: "128Mi"
     cpu: "500m"
+  
 containerPort: 3111
